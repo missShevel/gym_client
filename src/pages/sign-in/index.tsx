@@ -16,7 +16,7 @@ export default function SignInPage() {
   const form = useFormik({
     initialValues: {
       email: 'o.shevel@gmail.com',
-      password: 'admin_password',
+      password: '',
     },
     validationSchema: yup.object().strict().shape({
       email: yup.string().email().strict().trim().required(),
